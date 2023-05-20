@@ -95,7 +95,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     console.log(hoursBilled, "per hour bil");
     let payment = hoursBilled * payFirstHour;
     if (hoursBilled > 1) {
-      payment = payFirstHour + hoursBilled * payFirstHour;
+      payment = payFirstHour + hoursBilled * payPerHour;
     }
     let billValue = car.isParked ? "-" : "Rp " + payment;
     return billValue;
